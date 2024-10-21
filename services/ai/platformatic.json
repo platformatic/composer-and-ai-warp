@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/ai-warp/0.5.1.json",
+  "server": {
+    "port": 0
+  },
+  "service": {
+    "openapi": true
+  },
+  "watch": true,
+  "module": "@platformatic/ai-warp",
+  "aiProvider": {
+    "llama2": {
+      "modelPath": "{PLT_AI_MODEL}"
+    }
+  },
+  "promptDecorators": {
+    "prefix": "You are an AI for Acme Corp. here to answer questions anyone has.\nThe question for you to answer is: ",
+    "suffix": "Please respond as consisely as possible."
+  }
+}
